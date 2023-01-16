@@ -9,4 +9,5 @@ echo manual echo SBATCH_HAHA: $SBATCH_HAHA
 echo manual echo RUNSH_HAHA: $RUNSH_HAHA
 echo manual echo ADHOC_HAHA: $ADHOC_HAHA
 echo manual echo ADHOC_HEHE: $ADHOC_HEHE
+env | grep SLURM | sort
 echo -e "========\n========"

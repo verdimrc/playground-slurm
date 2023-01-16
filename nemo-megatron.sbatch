@@ -10,6 +10,8 @@
 # x: verbose. Can be disabled to reduce verbosity.
 set -eax;
 
+env | grep SLURM | sort
+
 : "${SBATCH_HAHA:=haha}"
 export SBATCH_HEHE=$SLURM_JOB_NUM_NODES
 echo -e "${BASH_SOURCE[0]}" env "is\n`env | egrep 'HAHA|HEHE'`"
