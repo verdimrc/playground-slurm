@@ -1,0 +1,42 @@
++ : haha
++ export SBATCH_HEHE=2
++ SBATCH_HEHE=2
+++ egrep 'HAHA|HEHE'
+++ env
++ echo -e /var/spool/slurmd/job00018/slurm_script env 'is\nSBATCH_HEHE=2
+SBATCH_HAHA=haha'
+/var/spool/slurmd/job00018/slurm_script env is
+SBATCH_HEHE=2
+SBATCH_HAHA=haha
++ echo 'nemo-megatron: SBATCH_HAHA=haha'
+nemo-megatron: SBATCH_HAHA=haha
++ srun bash -c '
+ADHOC_HEHE=456 ;
+ADHOC_HAHA=123 /home/ec2-user/haha/run.sh
+'
+########
+########
+/home/ec2-user/haha/run.sh env is
+SBATCH_HEHE=2
+RUNSH_HEHE=/fsx/data/bpe
+ADHOC_HAHA=123
+SBATCH_HAHA=haha
+manual echo SBATCH_HAHA: haha
+manual echo RUNSH_HAHA: haha
+manual echo ADHOC_HAHA: 123
+manual echo ADHOC_HEHE:
+========
+========
+########
+########
+/home/ec2-user/haha/run.sh env is
+SBATCH_HEHE=2
+RUNSH_HEHE=/fsx/data/bpe
+ADHOC_HAHA=123
+SBATCH_HAHA=haha
+manual echo SBATCH_HAHA: haha
+manual echo RUNSH_HAHA: haha
+manual echo ADHOC_HAHA: 123
+manual echo ADHOC_HEHE:
+========
+========
